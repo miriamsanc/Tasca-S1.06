@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+  <div class="pokedex-screen">
+
+    <h3>Trainer Registration</h3>
+    <form action="submit.php" method="post">
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">email:</label>
+      <input type="email" id="email" name="email" placeholder="entrenador@pueblopaleta.com" required>
+
+      <label for="pass">Password:</label>
+      <input type="password" id="pass" name="pass">
+
+      <label>Gender:</label>
+      <div class="gender-group">
+        <input type="radio" id="boy" name="gender" value="Boy">
+        <label for="boy">Boy</label><br>
+
+        <input type="radio" id="girl" name="gender" value="Girl">
+        <label for="girl">Girl</label>
+      </div>
+    
+      <label for="pokemon">Choose your companion!</label>
+      <select id="pokemon" name="pokemon">
+        <option value="Chikorita">Chikorita</option>
+        <option value="Totodile">Totodile</option>
+        <option value="Cyndaquil">Cyndaquil</option>
+      </select>
+  
+      <button type="submit" class="pokeball-btn">GO</button>
+    </form>
+
+  </div>
+  
+</body>
+</html>
